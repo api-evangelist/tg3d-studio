@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.tg3ds.com/scanatic-studio-pricing
+product: Scanatic Studio
+currency: USD
+plans:
+  - name: Lite
+    price: 29.99
+    period: month
+    storage: 50 GB
+    ai_credits: 18
+    api_access: false
+    highlights: [public fabric library access]
+  - name: Starter
+    price: 1500
+    period: year
+    storage: 250 GB
+    fabric_scans: 100
+    model_imports: 20
+    credits: 300
+    api_access: false
+  - name: Essential
+    price: 3700
+    period: year
+    storage: 500 GB
+    fabric_scans: 300
+    model_imports: 50
+    credits: 900
+    api_access: true
+  - name: Standard
+    price: 6200
+    period: year
+    storage: 1 TB
+    fabric_scans: 1000
+    model_imports: 175
+    credits: 2000
+    api_access: true
+notes: >-
+  Scanatic Studio subscription tiers. API integration is unlocked on the
+  Essential and Standard annual plans. Separately, ScanAPI is offered free to
+  partners and each Scanatic Body Service includes up to 1,500 free API requests
+  per month.

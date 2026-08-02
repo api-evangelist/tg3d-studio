@@ -1,0 +1,29 @@
+# TG3D Studio
+
+> TG3D Studio Inc. is a 3D fashion technology company (founded 2016, Taiwan) whose Scanatic platform digitizes the body, materials, and clothing for made-to-measure and custom fashion. It exposes two RESTful API libraries — ScanAPI (free; controls the Scanatic 360 Body Scanner and registers Cloudzet scan users) and APIConnect (data across the Scanatic Body, Nuno3D, and StyleBook services). API access is key-based via the Scanatic for Fashion Developer Console.
+
+## APIs
+- [Scanatic APIs (business integration)](https://tg3ds.zendesk.com/hc/en-us/categories/900001218663-Business-Integration-with-APIs): ScanAPI + APIConnect RESTful API libraries; base host https://api.tg3ds.com
+- [Using the APIs in a nutshell](https://tg3ds.zendesk.com/hc/en-us/articles/900003496766-Using-the-APIs-in-a-nutshell): overview of ScanAPI, APIConnect, auth, encryption, and free-request quotas
+
+## Products
+- [Scanatic 360 Body Scanner](https://www.tg3ds.com/3d-body-scanner): captures ~250 body measurements in seconds
+- [Scanatic Studio](https://studio.tg3ds.com/): 3D product visualization and digital sampling software
+- [Cloudzet Mobile 3D Body Scan](https://tg3ds.zendesk.com/hc/en-us/articles/5296097289753--Cloudzet-Mobile-3D-Body-Scan): mobile body-scanning app
+- [BESPOKE-N App](https://www.tg3ds.com/): virtual try-on drapes scanned fabric onto clients from photos
+
+## Docs
+- [Help Center](https://tg3ds.zendesk.com/hc/en-us): TG3D Studio Zendesk knowledge base
+- [Shopify Integration Guide](https://tg3ds.zendesk.com/hc/en-us/articles/900006315483-Shopify-Integration-Guide)
+
+## Company
+- [Website](https://tg3ds.com/)
+- [Pricing](https://www.tg3ds.com/scanatic-studio-pricing)
+- [Blog](https://www.tg3ds.com/blog)
+- [LinkedIn](https://www.linkedin.com/company/tg3dstudio)
+- [YouTube](https://www.youtube.com/@TG3DStudio)
+
+## Notes
+- Authentication: partner API key generated in the Scanatic for Fashion Developer Console (account needs Developer permission); all HTTPS traffic is 256-bit encrypted.
+- Metering: each Scanatic Body Service includes up to 1,500 free API requests per month; other services vary by tier.
+- The full ScanAPI/APIConnect reference lives in the gated Developer Console; no public OpenAPI is published.

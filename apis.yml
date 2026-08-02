@@ -1,7 +1,33 @@
 aid: tg3d-studio
 name: TG3D Studio
-description: TG3D Studio is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  TG3D Studio Inc. is a 3D fashion technology company (founded 2016, headquartered
+  in Taiwan) whose Scanatic platform digitizes the body, materials, and clothing
+  for made-to-measure and custom fashion. Its products include the Scanatic 360
+  Body Scanner (roughly 250 body measurements captured in seconds), Scanatic
+  Studio 3D product-visualization and digital-sampling software, the Cloudzet
+  mobile body-scan app, and the BESPOKE-N virtual try-on app. For developers and
+  partners, TG3D exposes two RESTful API libraries: ScanAPI — offered free to
+  partners for integrating Cloudzet scan-user registration and building custom UI
+  that controls the Scanatic 360 Body Scanner — and APIConnect, which manipulates
+  data across the Scanatic Body, Nuno3D, and StyleBook services. API access is
+  key-based and issued from the Scanatic for Fashion Developer Console; all HTTPS
+  traffic is 256-bit encrypted and each Scanatic Body Service includes up to 1,500
+  free API requests per month.
+accessModel:
+  pricing: paid
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Paid · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://tg3ds.com/
 url: https://raw.githubusercontent.com/api-evangelist/tg3d-studio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +37,69 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- 3D Body Scanning
+- Fashion Technology
+- Made-to-Measure
+- Digital Fashion
+- Body Measurement
+- Apparel
+- API
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Scanatic APIs (ScanAPI + APIConnect)
+  description: >-
+    TG3D Studio's two RESTful API libraries. ScanAPI (free to partners) controls
+    the Scanatic 360 Body Scanner and registers Cloudzet scan users; APIConnect
+    manipulates data across the Scanatic Body, Nuno3D, and StyleBook services.
+    Full reference lives in the gated Scanatic for Fashion Developer Console; no
+    public OpenAPI is published.
+  humanURL: https://tg3ds.zendesk.com/hc/en-us/categories/900001218663-Business-Integration-with-APIs
+  baseURL: https://api.tg3ds.com
+  properties:
+  - type: Documentation
+    url: https://tg3ds.zendesk.com/hc/en-us/articles/900003496766-Using-the-APIs-in-a-nutshell
+  - type: Authentication
+    url: authentication/tg3d-studio-authentication.yml
 common:
+- type: DomainSecurity
+  url: security/tg3d-studio-domain-security.yml
 - type: Website
   url: https://tg3ds.com
+- type: DeveloperPortal
+  url: https://tg3ds.zendesk.com/hc/en-us/categories/900001218663-Business-Integration-with-APIs
+- type: Documentation
+  url: https://tg3ds.zendesk.com/hc/en-us
+- type: APIReference
+  url: https://tg3ds.zendesk.com/hc/en-us/categories/900001218663-Business-Integration-with-APIs
+- type: Support
+  url: https://tg3ds.zendesk.com/hc/en-us
+- type: Blog
+  url: https://strikingly.tg3ds.com/blog
+- type: Pricing
+  url: https://www.tg3ds.com/scanatic-studio-pricing
+- type: Login
+  url: https://api.tg3ds.com/mtm
+- type: TermsOfService
+  url: https://mtm.tg3ds.com/mtm/activation/legal
+- type: Authentication
+  url: authentication/tg3d-studio-authentication.yml
+- type: Conventions
+  url: conventions/tg3d-studio-conventions.yml
+- type: WellKnown
+  url: well-known/tg3d-studio-well-known.yml
+- type: LLMsTxt
+  url: llms/tg3d-studio-llms.txt
+- type: Plans
+  url: plans/tg3d-studio-plans.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

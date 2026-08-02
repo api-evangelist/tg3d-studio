@@ -1,0 +1,17 @@
+generated: '2026-07-21'
+method: searched
+source: live-probe
+hosts:
+  - host: https://api.tg3ds.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+  - host: https://www.tg3ds.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+notes: >-
+  No /.well-known discovery documents were published on the api.tg3ds.com or
+  www.tg3ds.com hosts at probe time (all 404). Absence is valid recorded data.

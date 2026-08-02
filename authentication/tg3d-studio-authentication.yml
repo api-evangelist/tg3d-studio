@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://tg3ds.zendesk.com/hc/en-us/articles/900003496766-Using-the-APIs-in-a-nutshell
+docs: https://tg3ds.zendesk.com/hc/en-us/categories/900001218663-Business-Integration-with-APIs
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: >-
+    TG3D Studio exposes two libraries of RESTful APIs — ScanAPI (free to partners;
+    controls the Scanatic 360 Body Scanner and registers Cloudzet scan users) and
+    APIConnect (manipulates data across the Scanatic Body, Nuno3D and StyleBook
+    services). API access is credential/key based and issued from the Developer
+    Console inside the Scanatic for Fashion (S4F) platform; the account must be
+    granted Developer permission by an Admin before a key can be generated. All
+    HTTPS data flows are 256-bit encrypted. The exact header name and any token
+    exchange are documented only inside the gated Developer Console and were not
+    publicly verifiable, so no scheme parameter values are asserted here.
+schemes:
+  - name: apiKey
+    type: apiKey
+    in: header
+    description: >-
+      Partner API key generated in the Scanatic for Fashion Developer Console and
+      sent on each request over HTTPS. Requires an account with Developer
+      permission. Header name not published outside the gated console.
+    sources: [https://tg3ds.zendesk.com/hc/en-us/articles/900003496766-Using-the-APIs-in-a-nutshell]
+apis:
+  - name: ScanAPI
+    description: >-
+      Free RESTful API for partners to integrate Cloudzet scan-user registration
+      with their own membership creation and to build their own UI (app or web)
+      that controls the Scanatic 360 Body Scanner.
+  - name: APIConnect
+    description: >-
+      RESTful API offering a wide variety of commands to manipulate data across
+      the Scanatic Body Service, Scanatic Nuno3D Service and Scanatic StyleBook
+      Service.

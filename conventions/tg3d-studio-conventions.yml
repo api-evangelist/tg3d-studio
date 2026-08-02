@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: searched
+source: https://tg3ds.zendesk.com/hc/en-us/articles/900003496766-Using-the-APIs-in-a-nutshell
+summary: >-
+  Cross-cutting request/response semantics for the TG3D Studio Scanatic APIs
+  (ScanAPI + APIConnect), derived from the public "Using the APIs in a nutshell"
+  documentation. The Developer Console reference is gated, so only publicly
+  documented conventions are captured here; unverifiable details are left null
+  rather than fabricated.
+conventions:
+  transport:
+    protocol: https
+    encryption: 256-bit
+    style: REST
+  authentication:
+    style: api-key
+    detail: Partner API key issued from the Scanatic for Fashion Developer Console; see authentication/tg3d-studio-authentication.yml
+  content_type:
+    request: null
+    response: null
+    notes: JSON is used across the Scanatic services; exact envelope not published outside the gated console.
+  idempotency:
+    supported: null
+    notes: No idempotency-key contract is publicly documented.
+  pagination:
+    style: null
+    notes: Not publicly documented.
+  versioning:
+    scheme: null
+    notes: Not publicly documented for ScanAPI/APIConnect.
+  rate_limiting:
+    style: quota
+    detail: >-
+      Usage is metered as monthly free-request quotas per service — each Scanatic
+      Body Service includes up to 1,500 free API requests per month; Nuno3D
+      Service and Cloudzet Store Web Plug-in packages include varying monthly free
+      request allowances by tier.
+    signal_headers: null
+  error_envelope:
+    shape: null
+    notes: Not publicly documented; see errors/ if/when an OpenAPI or error reference is captured.
+cross_links:
+  authentication: authentication/tg3d-studio-authentication.yml
