@@ -14,6 +14,17 @@ description: >-
   key-based and issued from the Scanatic for Fashion Developer Console; all HTTPS
   traffic is 256-bit encrypted and each Scanatic Body Service includes up to 1,500
   free API requests per month.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: self-serve
